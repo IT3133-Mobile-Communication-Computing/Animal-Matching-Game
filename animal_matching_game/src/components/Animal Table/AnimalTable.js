@@ -29,10 +29,11 @@ export default function AnimalTable(props){
             generateRandomAnimal(); 
           }, 1000);
     };
-    
+
     return(
         <div className='gameContainer'>
             <table className='game-table'>
+                <thead>
                 <tr>
                     <th colspan="3">
                         <h1>Animal Matching Game</h1>
@@ -49,6 +50,27 @@ export default function AnimalTable(props){
                         <h3>Select the Animal</h3>
                     </th>
                 </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td className='result-col' width="10%">
+                    <h2>{result}</h2></td>
+
+                    <td className='animalname-col' width="20%">
+                    <h2>{randomAnimal.name.toUpperCase()}</h2></td>
+                    <td className='animalgrid-col' width="70%">
+                        <div>
+                            <div className='animalgrid'>
+                                {animals.map((animal)=>(
+                                    <div key={animal.name} className='animalgrid-item' onClick={()=>handleAnimalClick(animal.name)}>
+                                        <img src={require(`../assets/img/${animal.img}`)} alt={animal.name} className='animal-image'/>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
             </table>
 
         </div>
