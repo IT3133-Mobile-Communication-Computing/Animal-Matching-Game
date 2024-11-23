@@ -50,7 +50,7 @@ Ensure you have the following installed:
 
 ---
 
-#Output
+# Output
 
 # ![alt text](outputWin.png)
 
