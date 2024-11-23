@@ -2,6 +2,7 @@ import { animals } from "../db/AnimalsDb";
 import '../Animal Table/AnimalTable.css';
 import React, { useEffect, useState } from 'react'
 
+
 export default function AnimalTable(props){
     
     const [randomAnimal,setRandomAnimal]= useState(null);
