@@ -28,6 +28,7 @@ Follow these steps to set up and run the project on your local machine.
 ### 1. Prerequisites
 
 Ensure you have the following installed:
+
 - **Node.js** (LTS version recommended)
 - **npm** (comes with Node.js)
 - **Visual Studio Code** (or any preferred code editor)
@@ -37,6 +38,7 @@ Ensure you have the following installed:
 ### 2. Installation Steps
 
 1. **Download the Project**:
+
    - Locate the project ZIP file in the shared drive.
    - Copy it to your local machine and extract it.
 
@@ -44,3 +46,14 @@ Ensure you have the following installed:
    Open the terminal and move into the project folder:
    ```bash
    cd path/to/project
+   ```
+
+---
+
+#Output
+
+# ![alt text](outputWin.png)
+
+# ![alt text](outputLose.png)
+
+---
