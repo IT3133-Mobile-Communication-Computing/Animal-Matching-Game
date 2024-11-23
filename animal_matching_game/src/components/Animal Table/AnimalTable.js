@@ -30,6 +30,11 @@ export default function AnimalTable(props){
           }, 1000);
     };
 
+    if (!randomAnimal) {
+        return <div className="loading">Loading...</div>;
+    }
+
+
     return(
         <div className='gameContainer'>
             <table className='game-table'>
